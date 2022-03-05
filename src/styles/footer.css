@@ -1,0 +1,32 @@
+#footer-cont{
+    display: flex;
+    height: 7vh;
+    width: 100vw;
+    color:rgb(206, 206, 206);
+    font-size: 18px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    background: rgb(65, 65, 65);
+    overflow: hidden;
+  }
+  
+  #mini-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 7vh;
+    gap: 13px;
+    border-top: 2px solid rgb(128, 128, 128);
+  }
+
+  #footer-img{
+    height: 4vh;
+    width: 2vw;
+    transition: 0.2s;
+  }
+  
+  #footer-img:hover{
+    transform: scale(1.1);
+  }

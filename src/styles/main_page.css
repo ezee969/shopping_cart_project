@@ -1,0 +1,120 @@
+#main-page{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    min-width: 100vw;
+    background-color: rgb(31, 31, 31);
+
+}
+
+#main-page-presentation-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 58vh;
+}
+
+#main-page-presentation-button-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#main-page-title-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 28vw;
+    height: 25vh;
+    border-radius: 50px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+#main-page-presentation-cont-upper{
+    letter-spacing: 0.2rem;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(123, 123, 123);
+}
+
+#main-page-presentation-cont-lower{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+#main-cat-pic{
+    border-radius: 50px;
+    height: 43vh;
+    width: 34vw;
+}
+
+#shop-now-but{
+    display: flex;
+    background-color: rgb(31, 31, 31);
+    border-radius: 50px;
+    height: 8.5vh;
+    width: 17vw;
+    font-size: 38px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.15s ease-in-out 0s;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+#shop-now-but:hover{
+    transform: scale(1.07);
+}
+
+#shop-now-but:active{
+    transform: scale(1);
+}
+
+#description-cont{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    align-items: center;
+    width: 100vw;
+    height: 55vh;
+    gap: 50px;
+    background-color: rgb(65, 65, 65);
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+#info-cont{
+    display:flex;
+    flex-direction: row;
+    gap:30px
+}
+
+.info-card{
+    display:flex;
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 75px;
+    align-items: center;
+    height: 35vh;
+    width: 16vw;
+    box-sizing: border-box;
+    gap: 25px;
+}
+
+.cat-info-img{
+    
+    border:4px solid white;
+    border-radius: 10px;
+    display: flex;
+    width: 10vw;
+    height: 24vh;
+    border-radius: 10px;
+}
