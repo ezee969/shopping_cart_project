@@ -17,12 +17,18 @@ const NavBar = () => {
                 <Link to={"/"}>
                     <li>Home</li>
                 </Link >
-                <li>Products</li>
-                <li>Contact</li>
+                <Link to={"/products"}>
+                    <li>Products</li>
+                </Link >
+                <Link to={"/contact"}>
+                    <li>Contact</li>
+                </Link >
             </ul>
-            <div id="circle-div">
-                <img id="shopping-cart-img" alt="cart" src={shoppingCartImg}></img>
-            </div>
+            <Link to={"/cart"}>
+                <div id="circle-div">
+                    <img id="shopping-cart-img" alt="cart" src={shoppingCartImg}></img>
+                </div>
+            </Link >
         </div>
     ) 
 }

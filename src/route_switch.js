@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/nav_bar"
 import MainPage from "./components/main_page"
 import Footer from "./components/footer"
+import Products from "./components/products"
 
 const RouteSwitch = () => {
   return (
@@ -10,7 +11,7 @@ const RouteSwitch = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          {/* <Route path="/profile" element={<Profile />} /> */}
+          <Route path="/products" element={<Products />} />
         </Routes>
         <Footer />
       </div>

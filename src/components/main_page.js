@@ -21,25 +21,33 @@ function MainPage() {
       </div>
       <div id="description-cont">
         <div id="description-title-cont">
-          ¿What do we have to offer?
+          Check out all these little fellas waiting for a home
         </div>
         <div id="info-cont">
           <div className="info-card">
             <img alt="" className="cat-info-img" src={cat1}></img>
-            Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+            Roberta enjoys transpasing private property. She is up to no good.
           </div>
           <div className="info-card">
             <img className="cat-info-img" alt="" src={cat2}></img>
-            Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+            This big fella over here is Stephan, he kinda has alcohol problems.
           </div>
           <div className="info-card">
             <img alt="" className="cat-info-img" src={cat3}></img>
-            Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+            This is Simon and, well, he likes to do this weird thing with the bread.
           </div>
           <div className="info-card">
             <img alt="" className="cat-info-img" src={cat4}></img>
-            Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+            Little Eduardo! He loves to cuddle in between your legs to nap.
           </div>
+        </div>
+      </div>
+      <div id="phrase-cont">
+        <div id="text-cont">
+          “Owners of dogs will have noticed that, if you provide them with food and water and shelter and affection, they will think you are God. Whereas owners of cats are compelled to realize that, if you provide them with food and water and affection, they draw the conclusion that they are God.” 
+        </div>
+        <div id="author-cont">
+        -Hitchens, Christopher 
         </div>
       </div>
       {/* <Link to={"/profile"}><button>
