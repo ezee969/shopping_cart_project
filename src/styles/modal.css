@@ -1,0 +1,11 @@
+#modal{
+    width: clamp(50%,700px,90vw);
+    height: min(50vh,300px);
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}

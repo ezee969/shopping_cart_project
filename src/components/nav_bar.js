@@ -2,9 +2,20 @@ import logo from "../assets/logo.png"
 import shoppingCartImg from "../assets/shopping-cart.png"
 import style from "../styles/nav_bar.css"
 import {Link} from "react-router-dom"
+import { useState } from "react"
+import Modal from "./Modal/index"
+import { AnimatePresence } from "framer-motion"
 
 
-const NavBar = () => {
+const NavBar = (props) => {
+
+    const [isOpen,setIsOpen] = useState(false);
+
+    const handleOpenCloseBut = () => {
+        isOpen ? setIsOpen(false) : setIsOpen(true)
+        console.log("nooo")
+    };
+
     return(
         <div id="nav-bar">
             <Link to={"/"}>
@@ -24,11 +35,12 @@ const NavBar = () => {
                     <li>Contact</li>
                 </Link >
             </ul>
-            <Link to={"/cart"}>
-                <div id="circle-div">
-                    <img id="shopping-cart-img" alt="cart" src={shoppingCartImg}></img>
-                </div>
-            </Link >
+            <div id="circle-div" onClick={handleOpenCloseBut}>
+                <img id="shopping-cart-img" alt="cart" src={shoppingCartImg}></img>
+            </div>
+            <AnimatePresence initial={false} exitBeforeEnter={true}>
+                {isOpen && <Modal isOpen={isOpen} handleOpenCloseBut={handleOpenCloseBut} />}
+            </AnimatePresence>
         </div>
     ) 
 }

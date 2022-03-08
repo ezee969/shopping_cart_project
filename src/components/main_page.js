@@ -5,17 +5,35 @@ import cat1 from "../assets/cat1.jpeg"
 import cat2 from "../assets/cat2.jpg"
 import cat3 from "../assets/cat3.jpeg"
 import cat4 from "../assets/cat4.jpeg"
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react"
 
 function MainPage() {
+
+  const [visible,setVisibility] = useState(false)
+
+  useEffect( () => {
+    setVisibility(true)
+
+    return() => {
+      setVisibility(false)
+    }
+  },[])
+
   return (
-    <div id="main-page">
+    <div id={visible? "main-page-visible" : "main-page-invisible"}>
       <div id="main-page-presentation-cont">
         <div id="main-page-presentation-button-cont">
           <div id="main-page-title-cont">
             <div id="main-page-presentation-cont-upper">BEST ONLINE STORE OF THE YEAR</div>
             <div id="main-page-presentation-cont-lower">All you need is love, and a cat</div>
           </div>
-          <button id="shop-now-but">Shop now</button>
+          <Link to={"/products"}>
+            <motion.button
+              whileHover={ {scale: 1.1} }
+              whileTap={ {scale: 0.9 } }
+              id="shop-now-but">Shop now</motion.button>
+          </Link >
         </div>
         <img id="main-cat-pic" src={mainCat} alt="cat-pic"></img>
       </div>
@@ -50,9 +68,6 @@ function MainPage() {
         -Hitchens, Christopher 
         </div>
       </div>
-      {/* <Link to={"/profile"}><button>
-        Profile  
-      </button></Link>  */}
     </div>
   );
 }

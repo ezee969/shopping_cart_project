@@ -1,0 +1,25 @@
+#products-main-cont-visible{
+    display: flex;
+    height: 280vh;
+    width: 100vw;
+    background-color: rgb(241, 241, 241);
+    justify-content: center;
+    align-items: center;
+    opacity:1;
+    transition: opacity 0.5s;
+}
+
+#products-main-cont-invisible{
+    opacity:0;
+}
+
+#products-cont{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 55px;
+    width: 75vw;
+    height: 270vh;
+}

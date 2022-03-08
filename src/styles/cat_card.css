@@ -1,0 +1,69 @@
+.cat-card-cont{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    height: 62vh;
+    width: 24vw;
+    padding: 30px 0px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.cat-sell-img{
+    display: block;
+    height: 27vh;
+    width: 14vw;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.cat-sell-text-cont{
+    display: flex;
+    padding-top: 20px;
+    /* align-items: center; */
+    width: 20vw;
+    height: 15vh;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(194, 194, 194);
+    flex-direction: column;
+    gap:8px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.price-cont{
+    display: flex;
+    width: 21vw;
+    font-size: 22px;
+    margin-left: 20px;
+    height: 5vh;
+}
+
+.add-cart-but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 6vh;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(12, 12, 12);
+    color: rgb(238, 238, 238);
+    font-size: 22px;
+    font-weight: bolder;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.add-cart-but:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+.add-cart-but:active{
+    background-color: rgb(77, 77, 77);
+}
+
