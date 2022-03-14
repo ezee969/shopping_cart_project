@@ -26,7 +26,7 @@ const RouteSwitch = () => {
       <div id="app">
         <NavBar />
         <Routes>
-          <Route path="/" element= {<MainPage />} />
+          <Route path="/shopping_cart_project" element= {<MainPage />} />
           <Route path="/products" element= {<Products />} />
           <Route path="/contact" element= {<Contact />} />
         </Routes>
