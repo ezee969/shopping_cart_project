@@ -19,14 +19,14 @@ const NavBar = () => {
 
     return(
         <div id="nav-bar">
-            <Link to={"/"}>
+            <Link to={"/shopping_cart_project"}>
                 <img id="logo-img" alt="logo" src={logo}></img>
             </Link >
             <Link to={"/"}>
                 <h1 id="page-title"> Paws Store </h1>
             </Link >
             <ul>
-                <Link to={"/"}>
+                <Link to={"/shopping_cart_project"}>
                     <li>Home</li>
                 </Link >
                 <Link to={{pathname:"/products"}}>
