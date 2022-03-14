@@ -22,7 +22,7 @@ const NavBar = () => {
             <Link to={"/shopping_cart_project"}>
                 <img id="logo-img" alt="logo" src={logo}></img>
             </Link >
-            <Link to={"/"}>
+            <Link to={"/shopping_cart_project"}>
                 <h1 id="page-title"> Paws Store </h1>
             </Link >
             <ul>
