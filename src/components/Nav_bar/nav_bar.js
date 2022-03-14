@@ -1,20 +1,21 @@
-import logo from "../assets/logo.png"
-import shoppingCartImg from "../assets/shopping-cart.png"
-import style from "../styles/nav_bar.css"
+import logo from "../../assets/logo.png"
+import shoppingCartImg from "../../assets/shopping-cart.png"
+import style from "./nav_bar.css"
 import {Link} from "react-router-dom"
-import { useState } from "react"
-import Modal from "./Modal/index"
-import { AnimatePresence } from "framer-motion"
+import { useEffect, useState, useContext } from "react"
+import { MyContext } from "../../route_switch"
 
 
-const NavBar = (props) => {
+const NavBar = () => {
 
-    const [isOpen,setIsOpen] = useState(false);
+    const {cart,handleOpenCloseBut} = useContext(MyContext)
+    const [cartItemQuantity,setCartItemQuantity] = useState(0)
 
-    const handleOpenCloseBut = () => {
-        isOpen ? setIsOpen(false) : setIsOpen(true)
-        console.log("nooo")
-    };
+    useEffect( () => {
+        setCartItemQuantity(cart.reduce((a, b) => a + b.quantity, 0)) 
+        
+    },[cart])
+
 
     return(
         <div id="nav-bar">
@@ -28,7 +29,7 @@ const NavBar = (props) => {
                 <Link to={"/"}>
                     <li>Home</li>
                 </Link >
-                <Link to={"/products"}>
+                <Link to={{pathname:"/products"}}>
                     <li>Products</li>
                 </Link >
                 <Link to={"/contact"}>
@@ -36,11 +37,10 @@ const NavBar = (props) => {
                 </Link >
             </ul>
             <div id="circle-div" onClick={handleOpenCloseBut}>
+                <div id="item-quantity">{cartItemQuantity}</div>
                 <img id="shopping-cart-img" alt="cart" src={shoppingCartImg}></img>
             </div>
-            <AnimatePresence initial={false} exitBeforeEnter={true}>
-                {isOpen && <Modal isOpen={isOpen} handleOpenCloseBut={handleOpenCloseBut} />}
-            </AnimatePresence>
+
         </div>
     ) 
 }

@@ -1,5 +1,5 @@
-import gitIcon from "../assets/github.png"
-import style from "../styles/footer.css"
+import gitIcon from "../../assets/github.png"
+import style from "./footer.css"
 
 const Footer = () => {
     return(

@@ -1,34 +1,45 @@
-import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import React, { useContext, useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import Backdrop from '../Backdrop/index'
-import ReactDOM from "react-dom"
-import style from "../../styles/modal.css"
+import ReactDom from "react-dom"
+import style from "./modal.css"
+import CartItems from '../Cart_items/cart_items'
+import { MyContext } from '../../route_switch'
+export const modalContext = React.createContext();
+
 
 const dropIn = {
   hidden: {
-    y: "-100vh",
+    x: "100vw",
     opacity: 0
   },
   visible: {
-    y: "0",
+    x: "34vw",
     opacity: 1,
     transition: {
-      duration: 0.1,
-      type: "spring",
-      damping: 30,
-      stiffness: 500
+      duration: 0.6,
     }
   },
   exit: {
-    y: "100vh",
-    opacity: 0
+    x: "100vw",
+    opacity: 0,
+    transition: {
+      duration: 0.4,
+    }
   }
 };
 
-const Modal = ({handleOpenCloseBut}) => {
+const Modal = () => {
+  const {handleOpenCloseBut,cart} = useContext(MyContext)
+  const [total,setTotal] = useState(0)
 
-  return ReactDOM.createPortal (
+  useEffect( () => {
+    setTotal(cart.reduce( (a,b) => a + b.total,0))
+  },[cart])
 
+
+
+  return ReactDom.createPortal (
         <Backdrop handleOpenCloseBut={handleOpenCloseBut} >
             <motion.div id="modal" 
                         onClick={(e) => e.stopPropagation()}
@@ -36,12 +47,17 @@ const Modal = ({handleOpenCloseBut}) => {
                         initial="hidden"
                         animate="visible"
                         exit="exit"
-                        >
-                <button onClick={handleOpenCloseBut} id="">Close</button>
+                        > 
+                          <h1 className='cart-title'>You shopping cart</h1>
+                          <modalContext.Provider value={{total,setTotal}}>
+                            <CartItems />
+                          </modalContext.Provider>
+                          <h2 className='cart-total'>Total: ${total}</h2>
+                          <button className='cart-but' id='checkout-but'>Checkout</button>
+                          <button className='cart-but' id='close-but' onClick={handleOpenCloseBut}>Close</button>
             </motion.div>
         </ Backdrop >,
         document.getElementById("portal")
-
   )
 }
 

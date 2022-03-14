@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import style from "../../styles/backdrop.css"
+import style from "./backdrop.css"
 
 const Backdrop = ({children, handleOpenCloseBut})  => {
   return (

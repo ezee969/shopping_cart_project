@@ -1,9 +1,9 @@
-import instagramImg from "../assets/instagram.png"
-import facebookImg from "../assets/facebook.png"
-import messengerImg from "../assets/messenger.png"
-import githubImg from "../assets/github2.png"
-import twitterImg from "../assets/twitter.png"
-import style from "../styles/contact.css"
+import instagramImg from "../../assets/instagram.png"
+import facebookImg from "../../assets/facebook.png"
+import messengerImg from "../../assets/messenger.png"
+import githubImg from "../../assets/github2.png"
+import twitterImg from "../../assets/twitter.png"
+import style from "./contact.css"
 import { useState, useEffect } from "react"
 
 const Contact = () => {

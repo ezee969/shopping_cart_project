@@ -19,12 +19,12 @@
     width: 14vw;
     border-radius: 15px;
     margin-bottom: 30px;
+    object-fit: cover;
 }
 
 .cat-sell-text-cont{
     display: flex;
     padding-top: 20px;
-    /* align-items: center; */
     width: 20vw;
     height: 15vh;
     box-sizing: border-box;

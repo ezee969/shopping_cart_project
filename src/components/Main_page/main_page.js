@@ -1,10 +1,10 @@
 import {Link} from "react-router-dom"
-import style from "../styles/main_page.css"
-import mainCat from "../assets/main-cat.jpg"
-import cat1 from "../assets/cat1.jpeg"
-import cat2 from "../assets/cat2.jpg"
-import cat3 from "../assets/cat3.jpeg"
-import cat4 from "../assets/cat4.jpeg"
+import style from "./main_page.css"
+import mainCat from "../../assets/main-cat.jpg"
+import cat1 from "../../assets/cat1.jpeg"
+import cat2 from "../../assets/cat2.jpg"
+import cat3 from "../../assets/cat3.jpeg"
+import cat4 from "../../assets/cat4.jpeg"
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react"
 

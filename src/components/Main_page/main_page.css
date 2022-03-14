@@ -57,6 +57,7 @@
     height: 43vh;
     width: 34vw;
     border: 5px solid white;
+    object-fit: cover;
 }
 
 #shop-now-but{
@@ -121,6 +122,7 @@
     display: flex;
     width: 11.5vw;
     height: 24.5vh;
+    object-fit: cover;
 }
 
 #phrase-cont{
