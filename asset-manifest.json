@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d9706e3.css",
-    "main.js": "/static/js/main.4240c0a4.js",
-    "static/media/esperanza.jpg": "/static/media/esperanza.3f75846c115aa67d1d22.jpg",
-    "static/media/cat3.jpeg": "/static/media/cat3.7212bf71bd4e87d74a49.jpeg",
-    "static/media/main-cat.jpg": "/static/media/main-cat.a0ad6433cd3874af1c9f.jpg",
-    "static/media/diamong.jpeg": "/static/media/diamong.1a6de617ff47b30febf3.jpeg",
-    "static/media/instagram.png": "/static/media/instagram.e719d8b29f452a16302d.png",
-    "static/media/jesus.jpg": "/static/media/jesus.2a48a386f2f1cb23240b.jpg",
-    "static/media/cat2.jpg": "/static/media/cat2.309b7196c71d7626e3bb.jpg",
-    "static/media/jazmin.jpg": "/static/media/jazmin.78e094ae7fb0f5b9c7f7.jpg",
-    "static/media/ramon.jpeg": "/static/media/ramon.57e1a26131ddcb3f03cb.jpeg",
-    "static/media/cat4.jpeg": "/static/media/cat4.93788404238d080df9b4.jpeg",
-    "static/media/cat1.jpeg": "/static/media/cat1.506b9e1de7ea03202cf6.jpeg",
-    "static/media/ponio.jpg": "/static/media/ponio.35781e81eb3036b8f061.jpg",
-    "static/media/messenger.png": "/static/media/messenger.082399ea7ff220d1e0c7.png",
-    "static/media/ezequiel.jpg": "/static/media/ezequiel.13a6d47d48b254b1fa0c.jpg",
-    "static/media/twitter.png": "/static/media/twitter.0a6edad28bf9b515be48.png",
-    "static/media/facebook.png": "/static/media/facebook.795fce8e464693d7346d.png",
-    "index.html": "/index.html",
-    "main.8d9706e3.css.map": "/static/css/main.8d9706e3.css.map",
-    "main.4240c0a4.js.map": "/static/js/main.4240c0a4.js.map"
+    "main.css": "/shopping_cart_project/static/css/main.8d9706e3.css",
+    "main.js": "/shopping_cart_project/static/js/main.5209e957.js",
+    "static/media/esperanza.jpg": "/shopping_cart_project/static/media/esperanza.3f75846c115aa67d1d22.jpg",
+    "static/media/cat3.jpeg": "/shopping_cart_project/static/media/cat3.7212bf71bd4e87d74a49.jpeg",
+    "static/media/main-cat.jpg": "/shopping_cart_project/static/media/main-cat.a0ad6433cd3874af1c9f.jpg",
+    "static/media/diamong.jpeg": "/shopping_cart_project/static/media/diamong.1a6de617ff47b30febf3.jpeg",
+    "static/media/instagram.png": "/shopping_cart_project/static/media/instagram.e719d8b29f452a16302d.png",
+    "static/media/jesus.jpg": "/shopping_cart_project/static/media/jesus.2a48a386f2f1cb23240b.jpg",
+    "static/media/cat2.jpg": "/shopping_cart_project/static/media/cat2.309b7196c71d7626e3bb.jpg",
+    "static/media/jazmin.jpg": "/shopping_cart_project/static/media/jazmin.78e094ae7fb0f5b9c7f7.jpg",
+    "static/media/ramon.jpeg": "/shopping_cart_project/static/media/ramon.57e1a26131ddcb3f03cb.jpeg",
+    "static/media/cat4.jpeg": "/shopping_cart_project/static/media/cat4.93788404238d080df9b4.jpeg",
+    "static/media/cat1.jpeg": "/shopping_cart_project/static/media/cat1.506b9e1de7ea03202cf6.jpeg",
+    "static/media/ponio.jpg": "/shopping_cart_project/static/media/ponio.35781e81eb3036b8f061.jpg",
+    "static/media/messenger.png": "/shopping_cart_project/static/media/messenger.082399ea7ff220d1e0c7.png",
+    "static/media/ezequiel.jpg": "/shopping_cart_project/static/media/ezequiel.13a6d47d48b254b1fa0c.jpg",
+    "static/media/twitter.png": "/shopping_cart_project/static/media/twitter.0a6edad28bf9b515be48.png",
+    "static/media/facebook.png": "/shopping_cart_project/static/media/facebook.795fce8e464693d7346d.png",
+    "index.html": "/shopping_cart_project/index.html",
+    "main.8d9706e3.css.map": "/shopping_cart_project/static/css/main.8d9706e3.css.map",
+    "main.5209e957.js.map": "/shopping_cart_project/static/js/main.5209e957.js.map"
   },
   "entrypoints": [
     "static/css/main.8d9706e3.css",
-    "static/js/main.4240c0a4.js"
+    "static/js/main.5209e957.js"
   ]
 }
